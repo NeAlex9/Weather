@@ -1,0 +1,23 @@
+.weather-forecast-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.1em;
+}
+
+.weather-forecast__day-week{
+    font-size: 1.6rem;
+}
+
+.weather-forecast__temperature{
+    font-size: 1.7rem;
+}
+
+.weather-forecast__icon{
+    font-size: 1.7rem;
+    color: #44aadd;
+    vertical-align: top;
+}
+
+.weather-forecast__icon:hover{
+    animation: shake 2s;
+}

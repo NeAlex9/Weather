@@ -1,0 +1,51 @@
+@import "toolbar.css";
+@import "currentWeather.css";
+@import "weatherForecast.css";
+
+* {
+    font-size: 24px;
+    font-family: Montserrat sans-serif;
+    letter-spacing: 1px;
+    color: white;
+}
+
+button {
+    border: none;
+    text-decoration: none;
+}
+
+input {
+    border-radius: 0;
+}
+
+body {
+    margin: auto;
+    transition: background-image 1.5s ease-in-out;
+    background-size: cover;
+    background: no-repeat;
+}
+
+.main_wrapper {
+    margin: 3rem 4rem 0 4rem;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+}

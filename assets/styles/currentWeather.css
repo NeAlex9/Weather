@@ -1,0 +1,73 @@
+.current-weather-wrapper{
+    display: flex;
+}
+
+.locality{
+    text-transform: uppercase;
+}
+
+.city{
+    font-size: 3rem;
+}
+
+.country{
+    font-size: 3rem;
+}
+
+.date-time-wrapper{
+    display: flex;
+}
+
+.date{
+    font-size: 1.8rem;
+
+}
+
+.time{
+    font-size: 1.8rem;
+
+}
+
+.weather-block{
+    display: flex;
+}
+
+.weather-block__temperature{
+    font-size: 10rem;
+}
+
+.inf-icon_wrapper{
+    position: relative;
+}
+
+.weather-block__icon{
+    position: absolute;
+    top: -2.6rem;
+    left:2rem;
+    font-size: 7rem;
+    color: #44aadd;
+}
+
+.weather-block__icon:hover{
+    animation: shake 2s;
+}
+
+.weather-block__inf{
+    margin-left: 1rem;
+    margin-top: 4.2rem;
+    line-height: 1.4rem;
+}
+
+.weather-block__description,
+.weather-block__feels-like,
+.weather-block__humidity
+{
+
+    text-transform: uppercase;
+}
+
+.weather-block__wind{
+    font-size: 1rem;
+}
+
+
