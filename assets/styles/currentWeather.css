@@ -58,16 +58,10 @@
     line-height: 1.4rem;
 }
 
+.weather-block__wind,
 .weather-block__description,
 .weather-block__feels-like,
 .weather-block__humidity
 {
-
     text-transform: uppercase;
 }
-
-.weather-block__wind{
-    font-size: 1rem;
-}
-
-
