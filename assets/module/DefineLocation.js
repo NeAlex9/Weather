@@ -93,7 +93,7 @@ function RenewFutureAndCurrentWeather(city) {
     })
 }
 
-function SetWeatherAndLocation() {
+function SetWeatherAndLocation(loc) {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition((() => {
             fetch("https://ipinfo.io/37.214.75.154?token=b5dc8df89c40cb").then(
@@ -106,6 +106,14 @@ function SetWeatherAndLocation() {
                     } else {
                         lang = "ru";
                     }
+                    let loc = jsonResponse.loc.split(',');
+                    mapboxgl.accessToken = 'pk.eyJ1IjoiYWxtMjAyMSIsImEiOiJja29yNXBveXIwano5MnJubGx0dWE4YjI4In0.iQfUeGjuxuSzT-rgp2wYNQ';
+                    let map = new mapboxgl.Map({
+                        container: 'map',
+                        style: 'mapbox://styles/mapbox/streets-v11',
+                        center: [loc[1], loc[0]],
+                        zoom: 10
+                    });
 
                     if (jsonResponse.city === "Minsk" && lang === 'ru') {
                         city.innerHTML = "Минск, ";

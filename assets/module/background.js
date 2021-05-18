@@ -40,7 +40,7 @@ function SetBackground(src) {
     const img = new Image();
     img.src = src;
     img.onload = () => {
-        document.body.style.backgroundImage = `url(${src})`;
+        document.body.style.backgroundImage = `rgba(0, 0, 0, 0.5) ), url(${src})`;
     };
 }
 

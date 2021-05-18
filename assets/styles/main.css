@@ -1,9 +1,13 @@
 @import "toolbar.css";
 @import "currentWeather.css";
 @import "weatherForecast.css";
+@import "map.css";
+
+html{
+    font-size: 24px;
+}
 
 * {
-    font-size: 24px;
     font-family: Montserrat sans-serif;
     letter-spacing: 1px;
     color: white;
@@ -19,6 +23,7 @@ input {
 }
 
 body {
+    font-size: 24px;
     margin: auto;
     transition: background-image 1.5s ease-in-out;
     background-size: cover;
@@ -26,7 +31,10 @@ body {
 }
 
 .main_wrapper {
-    margin: 3rem 4rem 0 4rem;
+    margin: 3vw 4vw 0 7vw;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    justify-items: center;
 }
 
 @keyframes shake {
@@ -49,3 +57,10 @@ body {
         transform: translate(1px, 2px) rotate(0deg);
     }
 }
+
+/*
+@media (max-width: 1000px){
+    html{
+        font-size: 12px;
+    }
+}*/

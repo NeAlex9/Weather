@@ -1,5 +1,6 @@
 .current-weather-wrapper{
     display: flex;
+    position: relative;
 }
 
 .locality{
@@ -7,11 +8,11 @@
 }
 
 .city{
-    font-size: 3rem;
+    font-size: 4vw;
 }
 
 .country{
-    font-size: 3rem;
+    font-size: 4vw;
 }
 
 .date-time-wrapper{
@@ -19,12 +20,12 @@
 }
 
 .date{
-    font-size: 1.8rem;
+    font-size: 2.8vw;
 
 }
 
 .time{
-    font-size: 1.8rem;
+    font-size: 2.8vw;
 
 }
 
@@ -33,7 +34,7 @@
 }
 
 .weather-block__temperature{
-    font-size: 10rem;
+    font-size: 15vw;
 }
 
 .inf-icon_wrapper{
@@ -41,10 +42,9 @@
 }
 
 .weather-block__icon{
-    position: absolute;
-    top: -2.6rem;
-    left:2rem;
-    font-size: 7rem;
+    position: relative;
+    top: -6vw;
+    font-size: 17vw;
     color: #44aadd;
 }
 
@@ -53,9 +53,10 @@
 }
 
 .weather-block__inf{
-    margin-left: 1rem;
-    margin-top: 4.2rem;
-    line-height: 1.4rem;
+    position: relative;
+    top: -8vw;
+    line-height: 2.5vw;
+    margin: 0 1vw 1vw 1vw;
 }
 
 .weather-block__wind,
@@ -63,5 +64,6 @@
 .weather-block__feels-like,
 .weather-block__humidity
 {
+    font-size: 1.5vw;
     text-transform: uppercase;
 }

@@ -1,12 +1,15 @@
 
 .header_wrapper {
-    margin: 2rem 2rem 2rem 4rem;
+    align-items: center;
+    margin: 3vw 7vw 2vw 7vw;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .toolbar {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .refresh {
@@ -99,21 +102,30 @@
     display: flex;
 }
 
+.input_wrapper{
+
+}
+
 .searchbar__input {
+    font-size: 20px;
     margin: auto;
     border-top-left-radius: 9px;
     border-bottom-left-radius: 9px;
     background: rgba(180, 181, 185, 0.5);
-    height: 50%;
-
+    height: 1.3rem;
+    width: 9rem;
 }
 
 .searchbar__button {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     text-transform: uppercase;
-    height: 57%;
-    width: 7em;
+    height: 1.6rem;
+    width: 5em;
     margin: auto;
     background: rgba(76, 82, 85, 0.4);
-    padding: 5px 12px;
+    padding: 5px 6px;
+}
+
+.searchbar__button:active{
+    border: 1px black solid;
 }

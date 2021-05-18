@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="styles/owfont-regular.css">
     <link rel="stylesheet" href="styles/owfont-regular.min.css">
     <link rel="stylesheet" href="styles/main.css">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css' rel='stylesheet'/>
 </head>
 <body>
     <header>
@@ -24,10 +26,10 @@
                     <div class="degree__celsius">°C</div>
                 </div>
             </div>
-            <form class="searchbar" action="">
-                <input class="searchbar__input" type="text">
-                <button class="searchbar__button">search</button>
-            </form>
+            <div class="input_wrapper">
+                <input class="searchbar__input" name="cityName" type="text">
+                <button class="searchbar__button" type="button">search</button>
+            </div>
         </div>
     </header>
     <main>
@@ -44,9 +46,7 @@
                             <span class="time"></span>
                         </div>
                         <div class="weather-block">
-                            <div class="weather-block__temperature">
-
-                            </div>
+                            <div class="weather-block__temperature"></div>
                             <div class="inf-icon_wrapper">
                                 <div class="weather-block__icon"></div>
                                 <div class="weather-block__inf">
@@ -66,15 +66,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="map">
-
-                </div>
             </div>
+            <div id="map" style='width: 400px; height: 400px;'></div>
         </div>
     </main>
     <script src="module/DefineLocation.js"></script>
     <script src="module/DefineDateTime.js"></script>
     <script src="module/background.js"></script>
     <script src="module/script.js"></script>
+    <script src="module/map.js"></script>
 </body>
 </html>

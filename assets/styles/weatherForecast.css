@@ -1,19 +1,21 @@
 .weather-forecast-wrapper{
+    position: absolute;
+    margin-top: -7vw;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 0.1em;
+    grid-gap: 5vw;
 }
 
 .weather-forecast__day-week{
-    font-size: 1.6rem;
+    font-size: 2.3vw;
 }
 
 .weather-forecast__temperature{
-    font-size: 1.7rem;
+    font-size: 3vw;
 }
 
 .weather-forecast__icon{
-    font-size: 1.7rem;
+    font-size: 5vw;
     color: #44aadd;
     vertical-align: top;
 }
